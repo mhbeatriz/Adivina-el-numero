@@ -1,0 +1,7 @@
+# modulo-2-evaluacion-intermedia-mhbeatriz
+http://beta.adalab.es/modulo-2-evaluacion-intermedia-mhbeatriz/
+* EVALUACIÓN INTERMEDIA MÓDULO 2 
+Hola! esta es mi evaluación intermedia del módulo 2 para poner a prueba los conocimientos que he adquirido durante éste módulo sobre JavaScript.
+
+* Agrdecimientos 
+Agradezco a mis profesores Dayana, Iván y Miguel por todo el esfuerzo que han hecho por enseñarnos algo completamente nuevo para nosotras.
