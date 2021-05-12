@@ -12,27 +12,34 @@ function getRandomNumber(max) {
 const randomNumber = getRandomNumber(100);
 console.log (randomNumber);
 
+//counter
+let counter = 0;
+function handlerCounter (){
+    tryNumber.innerHTML= `numero de intentor: `+ (counter +=1);
+}
+
 //try
 function writeNumber(){
     const number = parseInt(inputNumber.value);
     if(number <= 0 || number >= 100){
-        clue.innerHTML= 'El número deber de estar ente 0 y 100';
+        clue.innerHTML= 'El número deber de estar ente 0 y 100🙄' ;
     }
     else if (number === randomNumber) {
-        clue.innerHTML = 'Has ganado campeona';
+        clue.innerHTML = '¡¡Has ganado campeona!! 🤟🏻';
     }
     else if (number < randomNumber){
-        clue.innerHTML = 'Demasiado bajo';
+        clue.innerHTML = 'Demasiado bajo 🧐';
     }
     else if (number > randomNumber) {
-        clue.innerHTML = 'Demasiado alto';
+        clue.innerHTML = 'Demasiado alto 🧐';
     }
 }
 
 //funtion que agrupe a todas
 function handlerClick(event){
     event.preventDefault();
-writeNumber();
+    writeNumber();
+    handlerCounter();
 }
 
 //eventListener
