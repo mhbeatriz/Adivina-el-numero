@@ -15,7 +15,7 @@ console.log (randomNumber);
 //counter
 let counter = 0;
 function handlerCounter (){
-    tryNumber.innerHTML= `numero de intentor: `+ (counter +=1);
+    tryNumber.innerHTML= `numero de intentos: `+ (counter +=1);
 }
 
 //try
