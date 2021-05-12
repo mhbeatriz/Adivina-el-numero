@@ -1,0 +1,55 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.main {
+  border: 10px solid lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-transform: uppercase;
+  color: lightseagreen;
+}
+
+.subtitle {
+  text-transform: lowercase;
+}
+.subtitle::first-letter {
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.input {
+  height: 25px;
+  text-align: center;
+}
+
+.clue {
+  text-transform: uppercase;
+}
+
+.try {
+  text-transform: uppercase;
+}
