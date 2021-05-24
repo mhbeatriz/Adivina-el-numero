@@ -1,8 +1,8 @@
 "use strict";
 //const
-const button = document.querySelector(".js-button");
+const btn = document.querySelector(".js-button");
 const inputNumber = document.querySelector(".js-input");
-const clue = document.querySelector(".js-clue");
+const clueText = document.querySelector(".js-clue");
 const tryNumber = document.querySelector(".js-try");
 
 // generate random number
@@ -22,13 +22,13 @@ function handlerCounter() {
 function writeNumber() {
   const number = parseInt(inputNumber.value);
   if (number <= 0 || number >= 100) {
-    clue.innerHTML = "El número deber de estar ente 0 y 100🙄";
+    clueText.innerHTML = "El número deber de estar ente 0 y 100🙄";
   } else if (number === randomNumber) {
-    clue.innerHTML = "¡¡Has ganado campeona!! 🤟🏻";
+    clueText.innerHTML = "¡¡Has ganado campeona!! 🤟🏻";
   } else if (number < randomNumber) {
-    clue.innerHTML = "Demasiado bajo 🧐";
+    clueText.innerHTML = "Demasiado bajo 🧐";
   } else if (number > randomNumber) {
-    clue.innerHTML = "Demasiado alto 🧐";
+    clueText.innerHTML = "Demasiado alto 🧐";
   }
 }
 
@@ -40,4 +40,4 @@ function handlerClick(event) {
 }
 
 //eventListener
-button.addEventListener("click", handlerClick);
+btn.addEventListener("click", handlerClick);
