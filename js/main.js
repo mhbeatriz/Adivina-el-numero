@@ -20,16 +20,19 @@ function handlerCounter() {
 
 //try
 function writeNumber() {
+  let htmlCode = "";
   const number = parseInt(inputNumber.value);
+
   if (number <= 0 || number >= 100) {
-    clueText.innerHTML = "El número deber de estar ente 0 y 100🙄";
+    htmlCode = "El número deber de estar ente 0 y 100🙄";
   } else if (number === randomNumber) {
-    clueText.innerHTML = "¡¡Has ganado campeona!! 🤟🏻";
+    htmlCode = "¡¡Has ganado campeona!! 🤟🏻";
   } else if (number < randomNumber) {
-    clueText.innerHTML = "Demasiado bajo 🧐";
+    htmlCode = "Demasiado bajo 🧐";
   } else if (number > randomNumber) {
-    clueText.innerHTML = "Demasiado alto 🧐";
+    htmlCode = "Demasiado alto 🧐";
   }
+  clueText.innerHTML = htmlCode;
 }
 
 //funtion que agrupe a todas
